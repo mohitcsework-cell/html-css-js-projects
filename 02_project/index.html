@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Rating</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <!-- <h2>Add Restaurant</h2>
+
+<input type="text" id="restaurantName" placeholder="Restaurant Name">
+
+<select id="restaurantCuisine">
+    <option>Vegan</option>
+    <option>Asian</option>
+    <option>French</option>
+</select>
+
+<button id="addBtn">Add Restaurant</button>
+
+<hr><br> -->
+
+            <div class="filter-box">
+                <label>Cuisine</label>
+                <select>
+                    <option>Select cuisine</option>
+                    <option>Vegan</option>
+                    <option>Asian</option>
+                    <option>French</option>
+                </select>
+            </div>
+
+            <div class="filter-box">
+                <label>Price Range</label>
+                <select>
+                    <option>Select price level</option>
+                    <option>Low</option>
+                    <option>Medium</option>
+                    <option>High</option>
+                </select>
+            </div>
+
+            <div class="filter-box">
+                <label>Audience</label>
+                <select>
+                    <option>Select audience</option>
+                    <option>Family</option>
+                    <option>Friends</option>
+                    <option>Couples</option>
+                </select>
+            </div>
+
+        </aside>
+
+        <!-- Right Content -->
+        <main class="main-content">
+
+            <!-- Restaurant 1 -->
+            <div class="card">
+
+                <div class="rank">
+                    <h1>1</h1>
+                </div>
+
+                <div class="details">
+
+                    <h2>Suite Food Lounge</h2>
+
+                    <div class="tags">
+                        <span class="vegan">Vegan</span>
+                        <span class="asian">Asian</span>
+                    </div>
+
+                </div>
+
+                <div class="image">
+                    <img src="images/food1.jpg" alt="">
+                </div>
+
+            </div>
+
+            <!-- Restaurant 2 -->
+            <div class="card">
+
+                <div class="rank">
+                    <h1>2</h1>
+                </div>
+
+                <div class="details">
+
+                    <h2>Spicy Dragon</h2>
+
+                    <div class="tags">
+                        <span class="asian">Asian</span>
+                    </div>
+
+                </div>
+
+                <div class="image">
+                    <img src="images/food2.jpg" alt="">
+                </div>
+
+            </div>
+
+            <!-- Restaurant 3 -->
+            <div class="card">
+
+                <div class="rank">
+                    <h1>3</h1>
+                </div>
+
+                <div class="details">
+
+                    <h2>Luscious Blue Caffino</h2>
+
+                    <div class="tags">
+                        <span class="french">French</span>
+                    </div>
+
+                </div>
+
+                <div class="image">
+                    <img src="images/food3.jpg" alt="">
+                </div>
+
+            </div>
+
+            <!-- Chart Section -->
+            <section class="chart">
+
+                <h2>Restaurant Analytics</h2>
+
+                <div class="graph">
+
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                    <div class="bar bar4"></div>
+                    <div class="bar bar5"></div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="add.js"></script>
+
+
+</body>
+</html>

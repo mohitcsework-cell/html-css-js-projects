@@ -1,0 +1,10 @@
+{
+    "name": "Counter App",
+    "short_name": "Counter",
+    "start_url": "./",
+    "display": "standalone",
+    "background_color": "#081936",
+    "theme_color": "#081936",
+    "description": "A simple counter app",
+    "icons": []
+}

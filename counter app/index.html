@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#081936">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>📊 Counter App</h1>
+
+        <p>
+            Click the buttons to increase, decrease
+            or reset the count.
+        </p>
+
+        <div class="count-box">
+            <span id="count">0</span>
+        </div>
+
+        <div class="buttons">
+
+            <button id="increase">+</button>
+
+            <button id="decrease">−</button>
+
+            <button id="reset">↻</button>
+
+        </div>
+
+        <div class="button-text">
+            <span>Increase</span>
+            <span>Decrease</span>
+            <span>Reset</span>
+        </div>
+
+        <footer>
+            Built with ❤️ HTML | CSS | JavaScript
+        </footer>
+
+    </div>
+
+    <script src="script.js">
+    if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("sw.js");
+    }
+    </script>
+
+</body>
+</html>

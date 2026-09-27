@@ -1,0 +1,226 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    background:#f6f8fb;
+    padding:40px;
+}
+
+/* Main Layout */
+
+.container{
+    display:flex;
+    gap:40px;
+}
+
+/* Sidebar */
+
+.sidebar{
+    width:280px;
+    background:#fff;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    height:fit-content;
+}
+
+.filter-box{
+    margin-bottom:30px;
+}
+
+.filter-box label{
+    display:block;
+    font-size:18px;
+    font-weight:600;
+    margin-bottom:10px;
+    color:#1b2a41;
+}
+
+.filter-box select{
+    width:100%;
+    padding:15px;
+    border:none;
+    outline:none;
+    border-radius:12px;
+    background:#eef2f7;
+    font-size:16px;
+    cursor:pointer;
+}
+
+/* Right Section */
+
+.main-content{
+    flex:1;
+}
+
+/* Restaurant Card */
+
+.card{
+    background:#fff;
+    border-radius:25px;
+    padding:25px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:30px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+/* Rank */
+
+.rank{
+    width:80px;
+    height:80px;
+    background:linear-gradient(135deg,#ff7a59,#ff5f6d);
+    border-radius:25px;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.rank h1{
+    font-size:34px;
+}
+
+/* Details */
+
+.details{
+    flex:1;
+    margin-left:30px;
+}
+
+.details h2{
+    color:#183153;
+    margin-bottom:15px;
+}
+
+.tags{
+    display:flex;
+    gap:15px;
+}
+
+.tags span{
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:15px;
+    font-weight:500;
+}
+
+/* Tags */
+
+.vegan{
+    border:2px solid #24c78e;
+    color:#24c78e;
+}
+
+.asian{
+    border:2px solid #ff7a59;
+    color:#ff7a59;
+}
+
+.french{
+    border:2px solid #00bcd4;
+    color:#00bcd4;
+}
+
+/* Images */
+
+.image img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid white;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+/* Graph */
+
+.chart{
+    background:white;
+    padding:30px;
+    border-radius:25px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.chart h2{
+    margin-bottom:30px;
+    color:#183153;
+}
+
+.graph{
+    height:250px;
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-evenly;
+}
+
+.bar{
+    width:45px;
+    border-radius:10px 10px 0 0;
+}
+
+.bar1{
+    height:160px;
+    background:#ff7a59;
+}
+
+.bar2{
+    height:120px;
+    background:#4dd0e1;
+}
+
+.bar3{
+    height:180px;
+    background:#ff7a59;
+}
+
+.bar4{
+    height:90px;
+    background:#4dd0e1;
+}
+
+.bar5{
+    height:210px;
+    background:#24c78e;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.container{
+    flex-direction:column;
+}
+
+.sidebar{
+    width:100%;
+}
+
+.card{
+    flex-direction:column;
+    text-align:center;
+}
+
+.details{
+    margin:20px 0;
+}
+
+.tags{
+    justify-content:center;
+}
+
+}
